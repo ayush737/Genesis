@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int profit(int CP, int SP) {
+   int profit = (SP - CP);
+   return profit;
+}
+
+int loss(int CP, int SP) {
+   int loss = (CP - SP);
+   return loss;
+}
+int main() {
+   int CP = 600, SP = 100;
+   if (SP == CP)
+      cout << "No profit nor Loss";
+   else if (SP > CP)
+      cout<<"profit gained = "<< profit(CP, SP);
+   else
+      cout<<"loss incurred = "<<loss(CP , SP);
+   return 0;
+}
